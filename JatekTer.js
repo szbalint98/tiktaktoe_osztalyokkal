@@ -1,6 +1,7 @@
 import Mezo from "./Mezo.js";
 export default class Jatekter{
-    #szulElem
+    #szulElem;
+    #lepesSzamlalo=1;
     
     constructor(szulElem){
 

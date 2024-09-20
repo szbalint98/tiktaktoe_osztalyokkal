@@ -1,7 +1,7 @@
 
 export default class Mezo{
     #allapot=false;
-    #valtozo=1;
+    #lepesSzamlalo;
     #szulElem;
     
     constructor(allapot,szulElem){
@@ -14,9 +14,9 @@ export default class Mezo{
 
 #esemenykezelo(){
     this.#szulElem.on("click", ()=>{
-    const e = new CustomEvent("klikkel",{detail:this.#valtozo})
-    this.#valtozo+=1
-    if (this.#valtozo % 2 === 0) {
+    const e = new CustomEvent("klikkel",{detail:this.#lepesSzamlalo})
+    this.#lepesSzamlalo+=1
+    if (this.#lepesSzamlalo % 2 === 0) {
         this.#beallitO();
     } else {
         this.#beallitX();
