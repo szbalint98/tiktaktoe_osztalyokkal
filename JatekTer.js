@@ -3,15 +3,15 @@ export default class Jatekter{
     #szulElem;
     #lepesSzamlalo=1;
     
-    constructor(szulElem){
-
-        this.szulelem=this.szulElem;
-        this.#mezoKiir();
+    constructor(){
+        this.szulElem=$(".mezok")
         this.szulElem.empty();
+        this.#mezoKiir();
+        
     }
     #mezoKiir(){
         for (let index = 0; index < 9; index++) {
-                new Mezo(allapot);
+                new Mezo(allapot,this.#szulElem);
             
         }
     }
