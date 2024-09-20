@@ -9,3 +9,4 @@ class Jatek{
 
 
 }
+new Jatek();
