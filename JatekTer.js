@@ -1,20 +1,15 @@
+import Mezo from "./Mezo.js";
 export default class Jatekter{
-
-    constructor(szulElem){
+    #szulElem
+    #lista= []
+    constructor(lista,szulElem){
 
         this.szulelem=this.szulElem;
-        this.#megjelenit();
-        this.#esemenykezelo();
+        this.szulElem.empty();
     }
-    #esemenykezelo(){
-        this.gombElem.on("click", ()=>{
-        const e = new CustomEvent("kivalaszt",{detail:this.#kep})
-        window.dispatchEvent(e)
-    })
-    }
-
-    #megjelenit(){
-        this.szulElem.append()
-
+    mezoKiir(){
+        this.#lista.forEach((element=>{
+            new Mezo()
+        }))
     }
 }

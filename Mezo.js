@@ -1,3 +1,4 @@
+
 export default class Mezo{
     #allapot=false;
     
