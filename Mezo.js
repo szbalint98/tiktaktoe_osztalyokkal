@@ -1,10 +1,11 @@
 
 export default class Mezo{
-    #allapot=false;
+    
     #lepesSzamlalo;
     #szulElem;
     
-    constructor(allapot,szulElem){
+    constructor(lepesSzamlalo,szulElem){
+        this.lepesSzamlalo=lepesSzamlalo;
         this.szulElem=szulElem;
         this.#megjelenit();
         this.#esemenykezelo();
