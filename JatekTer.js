@@ -9,7 +9,7 @@ export default class Jatekter{
     }
     mezoKiir(){
         this.#lista.forEach((element=>{
-            new Mezo()
+            new Mezo(allapot);
         }))
     }
 }

@@ -15,7 +15,8 @@ export default class Mezo{
 })
 }
 #megjelenit(){
-
-    this.szulElem.append()
+    let txt=`<div class="mezo">        
+                   </div> `;
+    this.szulElem.append(txt);
 }
 }
