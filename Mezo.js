@@ -4,20 +4,22 @@ export default class Mezo{
     #valtozo=1;
     #szulElem;
     
-    constructor(allapot){
+    constructor(allapot,szulElem){
         this.szulElem=szulElem;
         this.#megjelenit();
         this.#esemenykezelo();
+        this.#beallitO();
+        this.#beallitX();
     }
 
 #esemenykezelo(){
-    this.gombElem.on("click", ()=>{
+    this.#szulElem.on("click", ()=>{
     const e = new CustomEvent("klikkel",{detail:this.#valtozo})
     this.#valtozo+=1
     if (this.#valtozo % 2 === 0) {
-        this.gombElem.textContent = "X"; // Páros esetén "X"
+        this.#beallitO();
     } else {
-        this.gombElem.textContent = "O"; // Páratlan esetén "O"
+        this.#beallitX();
     }
     window.dispatchEvent(e)
 })
