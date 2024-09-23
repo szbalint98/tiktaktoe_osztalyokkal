@@ -1,6 +1,26 @@
-.mezoO{
-
+.mezok{
+    display:  grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.mezo{
+    border: black solid 1px;
+    margin: 3px;
+    border-radius: 8px;
+    background-color: rgb(198, 201, 223);
+    height: 100px;
+    width: 100px;
 }
 .mezoX{
-    
+    background-image: url(iksz.jpg);
+}
+.mezoO{
+    background-image: url(iksz.jpg);
+}
+article{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    margin: auto;
+    width: 40%;
 }

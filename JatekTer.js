@@ -7,7 +7,9 @@ export default class Jatekter{
         const szulElem=$(".mezok")
         szulElem.empty();
         this.#mezoKiir(szulElem);
-        
+        window.addEventListener("click", (event) => {
+            console.log("Kattintás , lépésszámláló:", event.detail);
+        });
     }
     #mezoKiir(szulElem){
         for (let index = 0; index < 9; index++) {
