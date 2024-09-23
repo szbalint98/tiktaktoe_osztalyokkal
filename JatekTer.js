@@ -3,11 +3,13 @@ export default class Jatekter{
     
     #lepesSzamlalo=1;
     
+    
     constructor(){
         const szulElem=$(".mezok")
+        console.log(".mezok")
         szulElem.empty();
         this.#mezoKiir(szulElem);
-        window.addEventListener("click", (event) => {
+        window.addEventListener("klikkel", (event) => {
             console.log("Kattintás , lépésszámláló:", event.detail);
         });
     }
@@ -16,5 +18,5 @@ export default class Jatekter{
                 new Mezo(this.#lepesSzamlalo,szulElem);
             
         }
+        }
     }
-}
