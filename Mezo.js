@@ -17,10 +17,10 @@ export default class Mezo{
             const e = new CustomEvent("klikkel", { detail: this.#lepesSzamlalo });
                 this.#lepesSzamlalo += 1;
                 if (this.#lepesSzamlalo % 2 === 0) {
-                    $(event.target.addClass("MezoX"));
+                    $(event.target).addClass("MezoX");
                     console.log(event.target)
                 } else {
-                    $(event.target.addClass("MezoO"));
+                    $(event.target).addClass("MezoO");
                     console.log(event.target)
                 }
                 window.dispatchEvent(e);
